@@ -18,13 +18,26 @@ from tkinter import *
 import math
 
 win=tk.Tk()
-win.geometry("400x220")
+win.geometry("500x350")
 
-triangle_photo = win.PhotoImage(file = triangle.png)
-backpicture = Label(win, image = triangle_photo)
+trianglephoto = PhotoImage(file = "triangle.png")
+backpicture = Label(win, image = trianglephoto)
 
-
+#text variables
+ainput = StringVar()
+ainput.set("")
+binput = StringVar()
+binput.set("")
+cinput = StringVar()
+cinput.set("")
+hinput = StringVar()
+hinput.set("")
+eoutput = StringVar()
+eoutput.set("Answers go here!")
 
 backpicture.place(x=0, y=0, relwidth=1, relheight=1)
+leftside = Entry (win, textvariable = ainput )
+base = Entry (win, textvariable = binput)
+rightside = Entry (win, textvariable = cinput)
 
 win.mainloop()
