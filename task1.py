@@ -20,7 +20,7 @@ import math
 win=tk.Tk()
 win.geometry("400x220")
 
-triangle_photo = win.PhotoImage(triangle.png)
+triangle_photo = win.PhotoImage(file = triangle.png)
 backpicture = Label(win, image = triangle_photo)
 
 
